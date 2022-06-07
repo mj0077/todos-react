@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --bs-body-bg: hsl(0, 100%, 98%) !important;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background: hsl(189, 255, 40%); */
+}
+
+h1.heading {
+  text-align: center;
+  font: italic normal normal 72pt "Arial", "sans-serif";
+  color: #f004;
+  text-shadow: 5px 7px 10px #0003;
+}
+
+div.myApp {
+  box-shadow: 0 15px 50px 0 #0003;
+  left: 50%;
+  transform: translateX(50%);
+}
+
+input.addTodo {
+  font-size: 1.3rem;
+  padding: .75rem 1rem;
+  border: 0;
+  border-bottom: 1px solid #6664;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+input.addTodo:focus {
+  border-bottom: 1px solid #6664;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+p.small {
+  position: relative;
+  line-height: 1.3rem;
+  margin-top: 15vh;
+  font-size: x-small;
+  color: #8889;
+}
+
+/*
+===TODO====
+=COMPONENT=
+===HERE====
+*/
+
+div.todo {
+  text-align: left;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+
+div.todo label {
+  color: #000;
+  font-size: 1.3rem;
+  margin: 5px 10px;
+}
+
+div.todo:hover span {
+  visibility: visible;
+}
+
+div.todo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d004;
+  float: right;
+  margin-right: 7.5px;
+  /* line-height: 2.5rem; */
+  cursor: pointer;
+  /* border-radius: 50%;
+  padding: 0.25rem; */
+  visibility: hidden;
+
+}
+
+input.checkbox {
+  width: 20px;
+  height: 20px;
+  margin: 10px 5px;
+  border-radius: 50%;
+}
+
+
+/*
+====FUNCS=====
+==COMPONENT===
+====HERE======
+*/
+
+div.funcs {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border: 0;
+  border-top: 1px solid #6664;
+  border-bottom: 1px solid #6664;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #4447;
+}
+
+div.funcs::after {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 98%;
+  height: 3%;
+  left: 1%;
+  bottom: -2.75%;
+  border-bottom: 1px solid #6664;
+  z-index: -1;
+}
+
+div.funcs::before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  width: 96%;
+  height: 2.5%;
+  left: 2%;
+  bottom: -5%;
+  z-index: -1;
+}
+
+div.funcs p,
+ul.filters {
+  margin-bottom: 0;
+}
+
+ul.filters li {
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+ul.filters li:first-child {
+  border: 1px solid #4447;
+}
+
+div.funcs span {
+  cursor: pointer;
+}
