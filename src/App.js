@@ -60,7 +60,6 @@ function App() {
 
       <p className='small'>
         Created by Manav <br />
-        <small> Part of React UI Assignment</small>
       </p>
     </div>
   );
